@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#0f766e">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>مدیریت مرغداری (آدینه)</title>
+
+<link rel="manifest" href="manifest.json">
+
+<!-- ═══ فونت‌ها — غیر-بلاک ═══ -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" media="print" onload="this.media='all'">
+<noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
+</noscript>
+
+<!-- ═══ استایل‌ها ═══ -->
+<link rel="stylesheet" href="css/app.css?v=8">
+<link rel="stylesheet" href="css/dark-mode.css?v=1">
+</head>
+<body>
+
+<!-- ═══ نوار بالا ═══ -->
+<header class="top-nav">
+  <button class="top-nav-btn" id="hdrBack" onclick="Router.back()" aria-label="بازگشت">‹</button>
+  <div class="top-nav-spacer"></div>
+  <button class="top-nav-btn" id="hdrSearch" data-nav="search" aria-label="جستجو" title="جستجو">🔍</button>
+  <button class="top-nav-btn" id="hdrSettings" data-nav="settings" aria-label="تنظیمات" title="تنظیمات">⚙️</button>
+  <button class="top-nav-btn" id="hdrTheme" onclick="UI.toggleTheme()" aria-label="تم">🌙</button>
+</header>
+
+<!-- ═══ محتوای اصلی ═══ -->
+<main id="view" class="view"></main>
+
+<!-- ═══ نوار پایین (داینامیک) ═══ -->
+<nav class="bottom-nav" id="bottomNav"></nav>
+
+<!-- ═══ اسپلش ═══ -->
+<div id="appSplash" class="splash">
+  <div class="splash-content">
+    <div class="splash-logo">🐔</div>
+    <h1 class="splash-title">مدیریت مرغداری</h1>
+    <div class="splash-divider"><span class="splash-divider-ornament">◆ ◆ ◆</span></div>
+    <div class="splash-brand">آدینه</div>
+    <div class="splash-tagline">ساخته شده توسط رضا آدینه</div>
+  </div>
+  <div class="splash-loading"><span></span><span></span><span></span></div>
+</div>
+
+<!-- ═══ Error Overlay ═══ -->
+<div id="errorOv" class="error-ov">
+  <div class="error-box">
+    <div class="error-ic">⚠️</div>
+    <div class="error-title" id="errTitle">خطا</div>
+    <div class="error-msg" id="errMsg">مشکلی پیش آمد</div>
+    <div class="error-actions">
+      <button class="err-btn close" onclick="UI.hideError()">بستن</button>
+      <button class="err-btn reload" onclick="location.reload()">بارگذاری مجدد</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ Loading Overlay ═══ -->
+<div id="loadingOv" class="loading-ov">
+  <div class="loading-box">
+    <div class="loading-spin"></div>
+    <div class="loading-text" id="loadingText">لطفاً صبر کنید...</div>
+  </div>
+</div>
+
+<!-- ═══ Toast ═══ -->
+<div id="toast" class="toast">
+  <span class="toast-ic" id="toastIc">ℹ️</span>
+  <span class="toast-msg" id="toastMsg"></span>
+</div>
+
+<!-- ═══ Modal Root ═══ -->
+<div id="modalRoot"></div>
+
+<!-- ═══════════════════════════════════════════
+     اسکریپت‌ها — با defer برای لود موازی
+     ═══════════════════════════════════════════ -->
+
+<!-- ۱. هسته -->
+<script defer src="js/seed.js?v=4.3"></script>
+<script defer src="js/store.js?v=4.4"></script>
+<script defer src="js/ui.js?v=2.3"></script>
+<script defer src="js/router.js?v=2"></script>
+<script defer src="js/charts.js?v=1"></script>
+
+<!-- ۲. ماژول‌های صفحه -->
+<script defer src="js/views/dashboard.js?v=12"></script>
+<script defer src="js/views/daily.js?v=19"></script>
+<script defer src="js/views/flocks.js?v=10.0"></script>
+<script defer src="js/views/finance.js?v=4"></script>
+<script defer src="js/views/sales.js?v=4"></script>
+<script defer src="js/views/inventory.js?v=7"></script>
+<script defer src="js/views/medicine.js?v=3"></script>
+<script defer src="js/views/incubation.js?v=3"></script>
+<script defer src="js/views/feed.js?v=4"></script>
+<script defer src="js/views/contacts.js?v=2"></script>
+<script defer src="js/views/flock-analytics.js?v=1.1"></script>
+<script defer src="js/views/flock-profit.js?v=1.1"></script>
+<script defer src="js/views/reports.js?v=2"></script>
+<script defer src="js/views/settings.js?v=15"></script>
+<script defer src="js/views/more.js?v=2.4"></script>
+<script defer src="js/views/search.js?v=2"></script>
+
+<!-- ۳. راه‌انداز (باید آخر باشه) -->
+<script defer src="js/app.js?v=11"></script>
+
+</body>
+</html>

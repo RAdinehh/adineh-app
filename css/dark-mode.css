@@ -1,0 +1,656 @@
+/* ══════════════════════════════════════════════════════════
+   DARK MODE — UNIVERSAL OVERRIDES
+   پوشش همه ماژول‌ها: daily, inventory, flocks, finance, sales,
+   medicine, incubation, feed, contacts, reports, search
+   ══════════════════════════════════════════════════════════ */
+
+/* ═══ پایه ═══ */
+body.dark {
+  background: #0b1120 !important;
+  color: #f8fafc !important;
+}
+
+/* ══════════════════════════════════════════════════════════
+   ۱. کارت‌ها، سامری‌ها، Empty State‌ها
+   ══════════════════════════════════════════════════════════ */
+body.dark .day-card,
+body.dark .day-summary,
+body.dark .day-empty,
+body.dark .day-modal-box,
+body.dark .day-modal-box.day-sheet,
+
+body.dark .inv-card,
+body.dark .inv-summary,
+body.dark .inv-empty,
+body.dark .inv-modal-box,
+body.dark .inv-modal-box.inv-sheet,
+
+body.dark .flk-card,
+body.dark .flk-summary,
+body.dark .flk-empty,
+body.dark .flk-modal-box,
+
+body.dark .fin-card,
+body.dark .fin-summary,
+body.dark .fin-empty,
+body.dark .fin-modal-box,
+
+body.dark .sl-card,
+body.dark .sl-summary,
+body.dark .sl-empty,
+body.dark .sl-modal-box,
+
+body.dark .med-card,
+body.dark .med-summary,
+body.dark .med-empty,
+body.dark .med-modal-box,
+
+body.dark .inc-card,
+body.dark .inc-summary,
+body.dark .inc-empty,
+body.dark .inc-modal-box,
+
+body.dark .fd-card,
+body.dark .fd-summary,
+body.dark .fd-empty,
+body.dark .fd-modal-box,
+
+body.dark .ct-card:not(.owed),
+body.dark .ct-empty,
+body.dark .ct-modal-box,
+
+body.dark .rep-card {
+  background: #141b2d !important;
+  border-color: #1e293b !important;
+  color: #f8fafc !important;
+}
+
+/* ══════════════════════════════════════════════════════════
+   ۲. Box و Summary داخلی (خاکستری روشن)
+   ══════════════════════════════════════════════════════════ */
+body.dark .day-sum,
+body.dark .inv-sum,
+body.dark .flk-sum,
+body.dark .fin-sum,
+body.dark .sl-sum,
+body.dark .med-sum,
+body.dark .inc-sum,
+body.dark .fd-sum,
+body.dark .ct-kpi,
+
+body.dark .day-box,
+body.dark .day-stat,
+body.dark .day-chip,
+body.dark .day-note,
+
+body.dark .inv-box,
+body.dark .inv-stat,
+body.dark .inv-chip,
+body.dark .inv-note,
+
+body.dark .flk-box,
+body.dark .flk-stat,
+body.dark .flk-chip,
+
+body.dark .fin-box,
+body.dark .fin-stat,
+body.dark .fin-chip,
+body.dark .fin-note,
+
+body.dark .sl-box,
+body.dark .sl-stat,
+body.dark .sl-chip,
+body.dark .sl-note,
+
+body.dark .med-box,
+body.dark .med-stat,
+body.dark .med-chip,
+body.dark .med-note,
+body.dark .med-items-box,
+
+body.dark .inc-box,
+body.dark .inc-stat,
+body.dark .inc-chip,
+body.dark .inc-note,
+body.dark .inc-losses,
+
+body.dark .fd-nutrient,
+body.dark .fd-table,
+body.dark .fd-row,
+
+body.dark .ct-stat,
+body.dark .ct-info-item {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+  color: #cbd5e1 !important;
+}
+
+/* Box هایی که باید رنگی بمونن */
+body.dark .day-sum.g, body.dark .day-sum.r, body.dark .day-sum.b, body.dark .day-sum.o { background: #1e293b !important; }
+body.dark .inv-sum.g, body.dark .inv-sum.b, body.dark .inv-sum.o, body.dark .inv-sum.p { background: #1e293b !important; }
+body.dark .flk-sum.g, body.dark .flk-sum.b, body.dark .flk-sum.o, body.dark .flk-sum.r { background: #1e293b !important; }
+body.dark .fin-sum.g, body.dark .fin-sum.r, body.dark .fin-sum.b, body.dark .fin-sum.p { background: #1e293b !important; }
+body.dark .sl-sum.g, body.dark .sl-sum.b, body.dark .sl-sum.o, body.dark .sl-sum.p { background: #1e293b !important; }
+body.dark .med-sum.g, body.dark .med-sum.b, body.dark .med-sum.o, body.dark .med-sum.p, body.dark .med-sum.r { background: #1e293b !important; }
+body.dark .inc-sum.g, body.dark .inc-sum.b, body.dark .inc-sum.o, body.dark .inc-sum.p { background: #1e293b !important; }
+body.dark .fd-sum.g, body.dark .fd-sum.b, body.dark .fd-sum.o, body.dark .fd-sum.p { background: #1e293b !important; }
+
+body.dark .day-box.g, body.dark .day-box.r, body.dark .day-box.b, body.dark .day-box.o, body.dark .day-box.p { background: #1e293b !important; }
+body.dark .inv-box.g, body.dark .inv-box.r, body.dark .inv-box.b, body.dark .inv-box.o { background: #1e293b !important; }
+body.dark .flk-box.g, body.dark .flk-box.r, body.dark .flk-box.b, body.dark .flk-box.o, body.dark .flk-box.p { background: #1e293b !important; }
+body.dark .fin-box.g, body.dark .fin-box.r, body.dark .fin-box.b, body.dark .fin-box.o, body.dark .fin-box.p { background: #1e293b !important; }
+body.dark .sl-box.g, body.dark .sl-box.r, body.dark .sl-box.b, body.dark .sl-box.o, body.dark .sl-box.p { background: #1e293b !important; }
+body.dark .med-box.g, body.dark .med-box.r, body.dark .med-box.b, body.dark .med-box.o, body.dark .med-box.p { background: #1e293b !important; }
+body.dark .inc-box.g, body.dark .inc-box.r, body.dark .inc-box.b, body.dark .inc-box.o, body.dark .inc-box.p { background: #1e293b !important; }
+
+/* ══════════════════════════════════════════════════════════
+   ۳. متن‌های اصلی — سفید
+   ══════════════════════════════════════════════════════════ */
+body.dark .day-title,
+body.dark .day-date,
+body.dark .day-modal-t,
+body.dark .day-empty-t,
+body.dark .day-row-n,
+body.dark .day-sec-t,
+
+body.dark .inv-title,
+body.dark .inv-hd-name,
+body.dark .inv-modal-t,
+body.dark .inv-empty-t,
+body.dark .inv-row-n,
+body.dark .inv-sec-t,
+
+body.dark .flk-title,
+body.dark .flk-name,
+body.dark .flk-modal-t,
+body.dark .flk-empty-t,
+body.dark .flk-sec-t,
+
+body.dark .fin-title,
+body.dark .fin-hd-name,
+body.dark .fin-modal-t,
+body.dark .fin-empty-t,
+body.dark .fin-sec-t,
+
+body.dark .sl-title,
+body.dark .sl-hd-name,
+body.dark .sl-modal-t,
+body.dark .sl-empty-t,
+body.dark .sl-sec-t,
+
+body.dark .med-title,
+body.dark .med-hd-name,
+body.dark .med-modal-t,
+body.dark .med-empty-t,
+body.dark .med-row-n,
+body.dark .med-sec-t,
+
+body.dark .inc-title,
+body.dark .inc-hd-name,
+body.dark .inc-modal-t,
+body.dark .inc-empty-t,
+body.dark .inc-row-n,
+body.dark .inc-sec-t,
+
+body.dark .fd-title,
+body.dark .fd-name,
+body.dark .fd-modal-t,
+body.dark .fd-empty-t,
+body.dark .fd-row-n,
+body.dark .fd-sec-t,
+
+body.dark .ct-title,
+body.dark .ct-name-text,
+body.dark .ct-info-v,
+body.dark .ct-empty-t,
+
+body.dark .rep-title,
+body.dark .rep-card-title {
+  color: #f8fafc !important;
+}
+
+/* ══════════════════════════════════════════════════════════
+   ۴. متن‌های فرعی — خاکستری روشن
+   ══════════════════════════════════════════════════════════ */
+body.dark .day-sub,
+body.dark .day-flock,
+body.dark .day-sec-s,
+body.dark .day-empty-x,
+body.dark .day-note-l,
+body.dark .day-row-u,
+
+body.dark .inv-sub,
+body.dark .inv-empty-x,
+body.dark .inv-note-l,
+body.dark .inv-row-u,
+
+body.dark .flk-sub,
+body.dark .flk-empty-x,
+
+body.dark .fin-sub,
+body.dark .fin-empty-x,
+body.dark .fin-note-l,
+
+body.dark .sl-sub,
+body.dark .sl-empty-x,
+body.dark .sl-note-l,
+
+body.dark .med-sub,
+body.dark .med-sec-s,
+body.dark .med-empty-x,
+body.dark .med-row-u,
+
+body.dark .inc-sub,
+body.dark .inc-sec-s,
+body.dark .inc-empty-x,
+body.dark .inc-row-u,
+
+body.dark .fd-sub,
+body.dark .fd-empty-x,
+body.dark .fd-row-u,
+
+body.dark .ct-sub,
+body.dark .ct-info-l,
+body.dark .ct-empty-x,
+
+body.dark .rep-sub {
+  color: #94a3b8 !important;
+}
+
+/* ══════════════════════════════════════════════════════════
+   ۵. Border و Separator
+   ══════════════════════════════════════════════════════════ */
+body.dark .day-card-bd,
+body.dark .day-sec-hd,
+body.dark .day-actions,
+body.dark .day-modal-hd,
+
+body.dark .inv-card-bd,
+body.dark .inv-sec-hd,
+body.dark .inv-actions,
+body.dark .inv-modal-hd,
+
+body.dark .flk-card-bd,
+body.dark .flk-sec-hd,
+body.dark .flk-actions,
+body.dark .flk-modal-hd,
+
+body.dark .fin-card-bd,
+body.dark .fin-sec-hd,
+body.dark .fin-actions,
+body.dark .fin-modal-hd,
+
+body.dark .sl-card-bd,
+body.dark .sl-sec-hd,
+body.dark .sl-actions,
+body.dark .sl-modal-hd,
+
+body.dark .med-card-bd,
+body.dark .med-sec-hd,
+body.dark .med-actions,
+body.dark .med-modal-hd,
+
+body.dark .inc-card-bd,
+body.dark .inc-sec-hd,
+body.dark .inc-actions,
+body.dark .inc-modal-hd,
+
+body.dark .fd-card-bd,
+body.dark .fd-sec-hd,
+body.dark .fd-actions,
+body.dark .fd-modal-hd,
+
+body.dark .ct-body,
+body.dark .ct-section,
+body.dark .ct-actions,
+body.dark .ct-modal-hd,
+
+body.dark .rep-card-title {
+  border-color: #334155 !important;
+}
+
+/* ══════════════════════════════════════════════════════════
+   ۶. Tabs و Filterها
+   ══════════════════════════════════════════════════════════ */
+body.dark .inv-tab,
+body.dark .flk-filter-btn,
+body.dark .med-tab,
+body.dark .inc-tab,
+body.dark .fd-tab,
+body.dark .ct-tab,
+body.dark .ct-chip {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+  color: #cbd5e1 !important;
+}
+
+body.dark .inv-tab.on,
+body.dark .med-tab.on,
+body.dark .inc-tab.on,
+body.dark .fd-tab.on,
+body.dark .ct-tab.on,
+body.dark .ct-chip.on,
+body.dark .rep-tab.on {
+  background: #0f766e !important;
+  border-color: #0f766e !important;
+  color: #fff !important;
+}
+
+body.dark .rep-tab {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+  color: #cbd5e1 !important;
+}
+
+/* ══════════════════════════════════════════════════════════
+   ۷. Formها — Input/Select/Textarea
+   ══════════════════════════════════════════════════════════ */
+body.dark .day-fi,
+body.dark .day-fs,
+body.dark .day-ft,
+
+body.dark .inv-fi,
+body.dark .inv-fs,
+body.dark .inv-ft,
+
+body.dark .flk-fi,
+body.dark .flk-sel,
+body.dark .flk-ft,
+
+body.dark .fin-fi,
+body.dark .fin-fs,
+body.dark .fin-ft,
+
+body.dark .sl-fi,
+body.dark .sl-fs,
+body.dark .sl-ft,
+
+body.dark .med-fi,
+body.dark .med-fs,
+body.dark .med-ft,
+
+body.dark .inc-fi,
+body.dark .inc-fs,
+body.dark .inc-ft,
+
+body.dark .fd-fi,
+body.dark .fd-fs,
+body.dark .fd-ft,
+
+body.dark .ct-fi,
+body.dark .ct-fs,
+body.dark .ct-ft {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+  color: #f8fafc !important;
+}
+
+body.dark .day-fi:focus,
+body.dark .day-fs:focus,
+body.dark .day-ft:focus,
+body.dark .inv-fi:focus,
+body.dark .inv-fs:focus,
+body.dark .inv-ft:focus,
+body.dark .flk-fi:focus,
+body.dark .flk-sel:focus,
+body.dark .flk-ft:focus,
+body.dark .fin-fi:focus,
+body.dark .fin-fs:focus,
+body.dark .fin-ft:focus,
+body.dark .sl-fi:focus,
+body.dark .sl-fs:focus,
+body.dark .sl-ft:focus,
+body.dark .med-fi:focus,
+body.dark .med-fs:focus,
+body.dark .med-ft:focus,
+body.dark .inc-fi:focus,
+body.dark .inc-fs:focus,
+body.dark .inc-ft:focus,
+body.dark .fd-fi:focus,
+body.dark .fd-fs:focus,
+body.dark .fd-ft:focus,
+body.dark .ct-fi:focus,
+body.dark .ct-fs:focus,
+body.dark .ct-ft:focus {
+  background: #0b1120 !important;
+  border-color: #14b8a6 !important;
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.15) !important;
+}
+
+/* ══════════════════════════════════════════════════════════
+   ۸. Calendar
+   ══════════════════════════════════════════════════════════ */
+body.dark .day-cal-box,
+body.dark .flk-cal-box,
+body.dark .fin-cal-box {
+  background: #141b2d !important;
+}
+
+body.dark .day-cal-wd,
+body.dark .flk-cal-wd,
+body.dark .fin-cal-wd {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+}
+
+body.dark .day-cal-wdc,
+body.dark .flk-cal-wdc,
+body.dark .fin-cal-wdc {
+  color: #cbd5e1 !important;
+}
+
+body.dark .day-cal-d,
+body.dark .flk-cal-d,
+body.dark .fin-cal-d {
+  color: #f8fafc !important;
+}
+
+body.dark .day-cal-d.has-data {
+  background: rgba(20, 184, 166, 0.15) !important;
+}
+
+body.dark .day-cal-ft,
+body.dark .flk-cal-ft,
+body.dark .fin-cal-ft {
+  border-color: #334155 !important;
+}
+
+body.dark .day-cal-tb,
+body.dark .flk-cal-tb,
+body.dark .fin-cal-tb {
+  background: #1e293b !important;
+  color: #f8fafc !important;
+}
+
+body.dark .day-cal-my-row,
+body.dark .flk-cal-my,
+body.dark .fin-cal-my {
+  color: #f8fafc !important;
+}
+
+/* ══════════════════════════════════════════════════════════
+   ۹. جدول‌ها
+   ══════════════════════════════════════════════════════════ */
+body.dark .ct-table,
+body.dark .ct-payments-table,
+body.dark .fd-table,
+body.dark .rep-table {
+  background: #1e293b !important;
+}
+
+body.dark .ct-table td,
+body.dark .ct-payments-table td,
+body.dark .fd-table td,
+body.dark .rep-table td {
+  border-color: #334155 !important;
+  color: #cbd5e1 !important;
+}
+
+body.dark .ct-payments-table th,
+body.dark .fd-table th,
+body.dark .rep-table th {
+  background: #0f766e !important;
+  color: #fff !important;
+}
+
+body.dark .ct-table td.lbl,
+body.dark .fd-table .name-col {
+  color: #94a3b8 !important;
+}
+
+body.dark .ct-table tr.total td,
+body.dark .rep-table tr.total td {
+  border-top-color: #475569 !important;
+}
+
+body.dark .rep-table tr:nth-child(even) td {
+  background: #141b2d !important;
+}
+
+/* ══════════════════════════════════════════════════════════
+   ۱۰. Modal Close button
+   ══════════════════════════════════════════════════════════ */
+body.dark .day-modal-x,
+body.dark .inv-modal-x,
+body.dark .flk-modal-x,
+body.dark .fin-modal-x,
+body.dark .sl-modal-x,
+body.dark .med-modal-x,
+body.dark .inc-modal-x,
+body.dark .fd-modal-x,
+body.dark .ct-modal-x {
+  background: #334155 !important;
+  color: #f8fafc !important;
+}
+
+/* ══════════════════════════════════════════════════════════
+   ۱۱. Search Modal
+   ══════════════════════════════════════════════════════════ */
+body.dark .srch-result {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+}
+
+body.dark .srch-result-title,
+body.dark .srch-result-name {
+  color: #f8fafc !important;
+}
+
+body.dark .srch-result-meta {
+  color: #94a3b8 !important;
+}
+
+body.dark .srch-module-result {
+  background: linear-gradient(135deg, #0f2e2a, #064e3b) !important;
+  border-color: #0f766e !important;
+}
+
+/* ══════════════════════════════════════════════════════════
+   ۱۲. Buttons ثانویه (خاکستری)
+   ══════════════════════════════════════════════════════════ */
+body.dark .day-btn-s,
+body.dark .inv-btn-s,
+body.dark .flk-btn-s,
+body.dark .fin-btn-s,
+body.dark .sl-btn-s,
+body.dark .med-btn-s,
+body.dark .inc-btn-s,
+body.dark .fd-btn-s,
+body.dark .ct-btn-s,
+body.dark .rep-export {
+  background: #334155 !important;
+  color: #f8fafc !important;
+}
+
+/* ══════════════════════════════════════════════════════════
+   ۱۳. Item Picker (inventory)
+   ══════════════════════════════════════════════════════════ */
+body.dark .inv-picker-search {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+  color: #f8fafc !important;
+}
+
+body.dark .inv-picker-item {
+  background: transparent !important;
+}
+
+body.dark .inv-picker-item:active {
+  background: #1e293b !important;
+}
+
+body.dark .inv-picker-item.selected {
+  background: linear-gradient(135deg, #0f2e2a, #064e3b) !important;
+  border-color: #10b981 !important;
+}
+
+body.dark .inv-picker-item-ic {
+  background: #1e293b !important;
+}
+
+body.dark .inv-picker-item.selected .inv-picker-item-ic {
+  background: #0b1120 !important;
+}
+
+body.dark .inv-picker-item-name {
+  color: #f8fafc !important;
+}
+
+body.dark .inv-picker-item-meta {
+  color: #94a3b8 !important;
+}
+
+/* ══════════════════════════════════════════════════════════
+   ۱۴. Day Cardهای روزانه (اسکرین‌شات)
+   ══════════════════════════════════════════════════════════ */
+body.dark .day-card-hd:active {
+  background: #1e293b !important;
+}
+
+body.dark .day-toggle {
+  background: #1e293b !important;
+  color: #5eead4 !important;
+}
+
+body.dark .day-actions button.day-act-edit {
+  background: #1e3a8a !important;
+  color: #93c5fd !important;
+}
+
+body.dark .day-actions button.day-act-del {
+  background: #7f1d1d !important;
+  color: #fca5a5 !important;
+}
+
+body.dark .day-actions button.day-act-close {
+  background: #1e293b !important;
+  color: #cbd5e1 !important;
+}
+
+/* ══════════════════════════════════════════════════════════
+   ۱۵. ردیف‌های قفل‌شده (Locked)
+   ══════════════════════════════════════════════════════════ */
+body.dark .inv-row.locked,
+body.dark .flk-hall-row.locked,
+body.dark .flk-bt-row.locked,
+body.dark .med-row.locked,
+body.dark .inc-row.locked,
+body.dark .fd-row.locked,
+body.dark .fin-row.locked,
+body.dark .sl-row.locked,
+body.dark .day-row.locked {
+  background: linear-gradient(90deg, #0f2e2a 0%, #1e293b 30%) !important;
+}
+
+/* ══════════════════════════════════════════════════════════
+   ۱۶. ستون‌های Colored (left border)
+   ══════════════════════════════════════════════════════════ */
+body.dark .flk-hall-row,
+body.dark .flk-bt-row,
+body.dark .fin-row,
+body.dark .sl-row,
+body.dark .med-row,
+body.dark .inc-row,
+body.dark .fd-row {
+  background: #1e293b !important;
+}
